@@ -14,11 +14,12 @@ jobs:
       
       - uses: actions/setup-python@v4.5.0
         with:
-          python-version: 3.11.2
+          python-version: 3.7.15
 
       - name: Setup environment
         run: |
           mv travis_secrets.yaml secrets.yaml
+          sudo apt-get update
           sudo apt-get install -y libudev-dev
       
       - name: Install Home Assistant
