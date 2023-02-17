@@ -1,6 +1,14 @@
 !*.yaml
 !.gitignore
 
+.storage
+
+home-assistant.log
+home-assistant.log.*
+
+home-assistant_v2.db
+home-assistant_v2.db-*
+
 ip_bans.yaml
 secrets.yaml
 known_devices.yaml
