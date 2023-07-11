@@ -4,7 +4,7 @@ services:
     container_name: homeassistant
     image: ghcr.io/home-assistant/home-assistant:2022.6
     volumes:
-      - /home/pi/hass:/config
+      - <path to>/hass:/config
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     privileged: true

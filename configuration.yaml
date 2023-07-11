@@ -2,6 +2,14 @@
 # Loads default set of integrations. Do not remove.
 default_config:
 
+binary_sensor:
+  - platform: hikvision
+    host: 10.0.0.128
+    port: 80
+    ssl: false
+    username: !secret hikvision_username
+    password: !secret hikvision_password
+
 # Text to speech
 tts:
   - platform: google_translate
