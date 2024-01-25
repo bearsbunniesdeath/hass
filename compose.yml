@@ -2,9 +2,9 @@ version: '3'
 services:
   homeassistant:
     container_name: homeassistant
-    image: ghcr.io/home-assistant/home-assistant:2022.6
+    image: ghcr.io/home-assistant/home-assistant:stable
     volumes:
-      - <path to>/hass:/config
+      - <path_to_config_folder>:/config
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     privileged: true
