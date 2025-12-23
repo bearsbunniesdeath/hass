@@ -10,6 +10,12 @@ binary_sensor:
     username: !secret hikvision_username
     password: !secret hikvision_password
 
+lutron_caseta:
+  - host: 10.0.0.57
+    keyfile: lutron_caseta-10.0.0.57-key.pem
+    certfile: lutron_caseta-10.0.0.57-cert.pem
+    ca_certs: lutron_caseta-10.0.0.57-ca.pem
+
 # Text to speech
 tts:
   - platform: google_translate
